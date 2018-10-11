@@ -1,0 +1,8 @@
+#set terminal sixel
+set style line 1 lc rgb '#0060ad' lt 1 lw 1 pt 7 pi -1 ps 1
+set style line 2 lc rgb '#ad6000' lt 1 lw 1 pt 7 pi -1 ps 1
+set pointintervalbox 1.17
+set grid
+set title "Aptitudes de individuos generados" 
+plot "max.dat" with linespoints ls 1 title "Probabilidad Máxima", \
+     "min.dat" with linespoints ls 2 title "Probabilidad Mínima"
